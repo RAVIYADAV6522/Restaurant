@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import viteLogo from "/vite.svg";
 import "./App.css";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import JoinUsOnInsta from "./components/JoinUsOnInsta";
 import ViratFav from "./components/ViratFav";
 import Restaurants from "./components/Restaurants";
