@@ -39,13 +39,14 @@
 /* Responsive design for max-width 600px (keeping navbar horizontal) */
 @media only screen and (max-width: 600px) {
   .Navbar {
-    flex-direction: row; /* Keep links horizontal */
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping if necessary */
-    padding: 10px 5px; /* Reduce padding for smaller screens */
-    margin-left: -7px;
-    height: 100px;
-  }
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    height: auto;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    
 
   .design {
     padding: 5px 20px; /* Reduce padding for smaller buttons */

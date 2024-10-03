@@ -28,6 +28,12 @@
   margin-top: 10px;
   margin-bottom: 80px;
 }
+.story-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Responsive design for max-width 600px */
 @media only screen and (max-width: 600px) {

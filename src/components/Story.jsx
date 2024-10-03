@@ -9,7 +9,7 @@ export default function Story() {
         <img className="lungi" src={lungi}></img>
       </div>
 
-      <div>
+      <div className="story-data">
         <p className="storyheadpara">STORY BEHIND</p>
         <img className="storylogo" src="https://one8commune.co.in/wp-content/uploads/2024/03/One-8-commune-logo-2048x844.png"></img>
         <p  className="storypara">Comfort and authentic– the words that inspired the inception of the country’s first-ever one <br></br> of a kind restro-bar. Holding true to its ‘Commune Sensibility’, everything about the space is<br></br>influenced by the aura of togetherness.<br></br> <br></br>

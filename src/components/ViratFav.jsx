@@ -19,7 +19,7 @@ export default function ViratFav() {
             </p>
           </div>
 
-          <div>
+          <div className="raviright">
             <img className="ravi" src={ravi}></img>
           </div>
         </div>

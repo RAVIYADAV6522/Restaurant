@@ -1,18 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 import "./Restaurants.css";
 export default function Restaurants() {
+  const navigate = useNavigate();
   return (
     <>
-      
       <div id="restaurant" className="parentrestro">
         <div className="Restaurants">
           <div className="restrohead">
             <div className="r-div">
-            <h3 className="r-head">RESTAURANTS</h3>
-            
+              <h3 className="r-head">RESTAURANTS</h3>
             </div>
-            
+
             <p className="r-head-para">
               {/* 2 cities. 4 outlets. Infinite memories. And many more to come… */}
             </p>
@@ -52,11 +52,11 @@ export default function Restaurants() {
         <div className="Restrofooter">
           <div className="restrofooter">
             <p>(Coming Soon: Hyderabad, Indore, Dubai & many more!)</p>
-            <div className="moredata"><Link to={'/Restaurants'}>Click For More Info</Link></div>
+            <div onClick={()=>{navigate("/Restaurants"),scrollTo(0,0)}} className="moredata">
+              Click For More Info
+            </div>
           </div>
         </div>
-
-
       </div>
     </>
   );

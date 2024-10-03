@@ -9,17 +9,25 @@
 }
 
 .ravi {
-  max-width: 60%; /* Make the image responsive */
+  width: 100%; /* Make the image responsive */
   height: auto;
   margin-top: 150px;
   margin-right: 140px;
   margin-bottom: 150px;
 }
+.raviright{
+  max-width: 50%;
+}
 
 .data {
-  margin-top: 200px;
-  margin-left: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 170px;
   margin-right: 30px;
+  max-width: 50%;
 }
 
 p {
@@ -39,22 +47,38 @@ p {
 
   .ravi {
     margin: 20px 0; /* Reduce margins for smaller screens */
-    width: 80vw; /* Adjust image size for mobile */
+    width: 90vw; /* Adjust image size for mobile */
     height: auto;
     margin-left: 40px;
   }
+  .raviright{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  }
+  .ravi{
+    width: 80%;
+  }
 
   .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
     text-align: center; /* Center the text for mobile */
   }
 
-  h3 {
-    font-size: 28px; /* Adjust heading size */
-  }
+  
 
   p {
     font-size: 16px; /* Reduce paragraph size */
     line-height: 1.4;
   }
+}
+@media only screen and (max-width:768px){
+  .data .ravi{
+    width: 100%;
+  }
+
 }
